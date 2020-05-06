@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<title>Login Page</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+	
+	<style type="text/css">
+		.outerDiv{height:40px;width:100%;}
+		#div1{width:20%;}
+		input,button{width:100%;height:40px;box-sizing: border-box;}
+		a{text-decoration: none;margin: 10px;}
+	</style>
+	
+</head>
+<body>
+
+	<a href="#!report1">Report</a>
+	<a href="#!admin">Admin</a>
+	<a href="#!userManagement">User Management</a>
+	<a href="#!logOut">LogOut</a><br><br><br>
+	
+	<a href="#!addAdminUser">Add Admin/User</a>
+	<a href="#!deleteAdminUser">Delete Admin/User</a>
+	<a href="#!changePassword">Change password</a>
+	<a href="#!getAllUsers">Get Users List</a>
+	
+	<div style="margin-top: 30px;margin-left: 10px;">
+		<form action="/">
+			<div id="div1">
+				<div class="outerDiv">
+					<input type="text" id="username" ng-model="username" required placeholder="username"/>
+				</div>
+<!-- 				<div class="outerDiv" style="margin-top: 5px;margin-bottom: 5px;"> -->
+<!-- 					<input type="password" id="password" ng-model="password" required placeholder="password"/> -->
+<!-- 				</div> -->
+				<div class="outerDiv">
+					<button type="button" ng-click="deleteAdminUserFunction()">Delete Admin/User</button>
+				</div>
+			</div>
+		</form>
+	</div>	
+
+</body>
+</html>
